@@ -22,8 +22,33 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+Route::get('/view_messages', function () {
+    return view('pages.view_messages');
+});
+
+Route::get('/signup', function () {
+    return view('pages.signup');
+});
+
+Route::get('/signin', function () {
+    return view('pages.signin');
+});
+
+
+Route::get('/logout', function () {
+    return view('pages.logout');
+});
+
+
+Route::get('/card', function () {
+    return view('pages.card');
+});
+
 Route::post('/contact', function () {
     $data=request() ->all() ;
-   echo "email"; $data["email"];
-    echo "body" ;$data ["body"];
+   echo "email: " . $data["email"] . '<br>' ;
+
+    echo "body: " . $data ["body"];
+
+
 });

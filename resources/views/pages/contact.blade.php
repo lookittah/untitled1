@@ -16,7 +16,14 @@
                 <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
                        placeholder="name@example.com">
             </div>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="subject">
+                    </div>
 
+                </div>
+            </form>
             <div class="form-group">
                 <label for="body"> Message</label>
                 <textarea name="body" class="form-control" id="body" rows="3"></textarea>
